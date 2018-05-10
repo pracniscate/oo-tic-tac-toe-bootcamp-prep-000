@@ -80,4 +80,9 @@ class TicTacToe
     won? || draw?
   end
 
+  def winner
+    while combinations = won?
+    return @board[combinations[0]]
+  end
+end
 end
