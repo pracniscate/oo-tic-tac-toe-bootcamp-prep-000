@@ -64,5 +64,13 @@ class TicTacToe
     end
   end
   
+  def full?
+    if board.any?{|i| i == " "}
+      false
+    else
+      true
+    end
+  end
+  
   
 end
