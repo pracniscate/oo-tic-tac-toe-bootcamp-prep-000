@@ -82,7 +82,9 @@ class TicTacToe
 
   def winner
     while combinations = won?
-    return @board[combinations[0]]
+      return @board[combinations[0]]
+    end
   end
-end
+  
+  
 end
