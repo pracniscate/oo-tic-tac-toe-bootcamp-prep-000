@@ -65,11 +65,7 @@ class TicTacToe
   end
   
   def full?
-    if board.any?{|i| i == " "}
-      false
-    else
-      true
-    end
+    @board.all?{|markers| markers == "X" || markers == "O"}
   end
   
   def draw?
