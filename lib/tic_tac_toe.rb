@@ -84,7 +84,7 @@ class TicTacToe
   
   def play
     until over? do
-      turn(board)
+      turn
     end
   
     if won?
