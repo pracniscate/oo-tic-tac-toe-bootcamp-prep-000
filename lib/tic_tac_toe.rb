@@ -35,6 +35,6 @@ class TicTacToe
   end
   
   def valid_move?(index)
-  input.to_i.between?(1,9) && !position_taken?(input.to_i - 1)
+    input.to_i.between?(1,9) && !position_taken?(input.to_i - 1)
   end
 end
